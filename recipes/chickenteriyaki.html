@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resepti</title>
+
+    <!-- main css -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="navigation" id="myNavigation">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../reseptilista.html">Recipes</a> 
+            <a href="#" style="color: var(--not-ready-color);">Equipment</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    <!-- end of nav -->
+    <main class="content">
+      <div>
+        <section class="recipe-core">
+            <!-- Reseptin kuva --> 
+            <img
+              src="../pictures/teriyakinoodles.jpg" alt="Nuudelit" class="recipe-image"
+            />
+          <div>
+          <article>
+            <!-- Reseptin nimi -->
+            <h2>Reseptin nimi</h2>
+            <!-- Reseptin kuvaus -->
+            <p>
+                Reseptin kuvaus
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <h5>prep time</h5>
+                <p>30 min.</p>
+              </article>
+              <article>
+                <h5>cook time</h5>
+                <p>15 min.</p>
+              </article>
+              <article>
+                <h5>serving</h5>
+                <p>6 servings</p>
+              </article>
+            </div>
+            <p class="recipe-tags">
+              Tags : <a href="../tags/chicken.html">Chicken</a>
+              <a href="../tags/noodle.html">Noodle</a>
+            </p>
+          </article>
+        </section>
+      </div>
+        <!-- content -->
+        <section class="recipe-content">
+        <!-- Instructions Card -->
+        <div class="recipe-card instructions-card">
+            <h3>Instructions</h3>
+            <ol class="instructions">
+                <li>Bring a large pot of salted water to a boil. Add spaghetti and cook until al dente, about 8-10 minutes. Drain and set aside.</li>
+                <li>While the pasta is cooking, heat a large skillet over medium heat. Add a little olive oil and the pancetta. Cook until it is crispy, about 5 minutes. Add the garlic and cook for another minute.</li>
+                <li>In a bowl, whisk together the eggs, Parmesan, and a pinch of salt and pepper until well combined.</li>
+                <li>Remove the skillet from the heat. Add the drained spaghetti to the pancetta and garlic in the skillet. Toss well to coat the pasta in the pancetta fat.</li>
+                <li>Quickly add the egg and cheese mixture to the pasta, stirring rapidly to prevent the eggs from scrambling. The residual heat will cook the eggs and melt the cheese, creating a creamy sauce.</li>
+                <li>Season with more salt and pepper to taste. Serve immediately, garnished with additional Parmesan cheese if desired.</li>
+            </ol>
+        </div>
+        <!-- Ingredients Card -->
+        <div class="recipe-card ingredients-card">
+          <h3>Ingredients</h3>
+          <div class="multiplier-buttons">
+            <button onclick="adjustIngredients(1)">1x</button>
+            <button onclick="adjustIngredients(2)">2x</button>
+            <button onclick="adjustIngredients(3)">3x</button>
+            <button onclick="adjustIngredients(4)">4x</button>
+          </div>        
+          <ul>
+            <li data-qty="400" data-unit="g">400g spaghetti</li>
+            <li data-qty="200" data-unit="g">200g pancetta, cubed</li>
+            <li data-qty="3">3 large eggs</li>
+            <li data-qty="1" data-unit="cup">1 cup grated Parmesan cheese</li>
+            <li data-qty="2" data-unit="">2 cloves garlic, peeled</li>
+            <li>Extra virgin olive oil</li>
+            <li>Salt and black pepper to taste</li>
+          </ul>
+          </div>       
+          <div class="recipe-card equipment-card">
+            <h4>Equipment</h4>
+            <p class="single-tool">Hand Blender</p>
+            <p class="single-tool">Large Heavy Pot With Lid</p>
+            <p class="single-tool">Measuring Spoons</p>
+            <p class="single-tool">Measuring Cups</p>
+          </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+          Josun reseptit web harjoitus
+      </p>
+    </footer>
+</div>
+    <script src="../js/functions.js"></script>
+  </body>
+</html>
